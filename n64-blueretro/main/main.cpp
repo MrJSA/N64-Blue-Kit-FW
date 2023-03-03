@@ -1,6 +1,6 @@
 #include "main.h"
 
-BleGamepad bleGamepad("BlueN64 Gamepad", "JPZV");
+BleGamepad bleGamepad("N64 Blue Kit", "MrJSA");
 BleGamepadConfiguration bleGamepadConfig;
 
 TaskHandle_t loopTaskHandle = NULL;
@@ -145,7 +145,7 @@ void app_loop(void *params)
 
 extern "C" void app_main(void)
 {
-    printf("BlueN64 Control Generic Mode. HEAP=%#010lx\n", esp_get_free_heap_size());
+    printf("N64 Blue Kit Control Generic Mode. HEAP=%#010lx\n", esp_get_free_heap_size());
 
     blucontrol_mode_init(false);
     n64_init();
@@ -161,5 +161,5 @@ extern "C" void app_main(void)
     xTaskCreatePinnedToCore(app_loop, "APP_LOOP", 4096, NULL, tskIDLE_PRIORITY, &loopTaskHandle, 1);
     configASSERT(loopTaskHandle);
 
-    printf("BlueN64 Control. Started!\n");
+    printf("N64 Blue Kit Control. Started!\n");
 }
