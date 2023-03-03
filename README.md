@@ -1,6 +1,6 @@
 # N64-Blue-Kit-FW
 
-This is the Firmware Repository for the N64-Blue-Kit, a mod Kit to Mod you N64 Controller to be used as a Bluetooth controller.
+This is the Firmware Repository for the [N64-Blue-Kit](https://github.com/MrJSA/N64-Blue-Kit-HW), a mod Kit to Mod you N64 Controller to be used as a Bluetooth controller.
 
 Should be Compatible with Nintendo Switch and BlueRetro Adapters.
 
