@@ -8,7 +8,7 @@ It's also compatible with the original joystick, so there is no need of using an
 
 ## Installation
 
-The recommended way is to go to the [Online Installer](https://mrjsa.github.io/N64-Blue-Test/) from a supported browser (like Chrome), connect your ESP32 in Boot/Flash mode, and click in Install. It'll always install the latest version.
+The recommended way is to go to the [Online Installer](https://mrjsa.github.io/N64-Blue-Kit-FW/) from a supported browser (like Chrome), connect your ESP32 in Boot/Flash mode, and click in Install. It'll always install the latest version.
 
 The other way is to clone the project and building it yourself, thought this is **not recommended** for new users.
 
