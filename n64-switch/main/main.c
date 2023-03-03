@@ -50,7 +50,7 @@ void button_task(hoja_button_data_s *button_data)
 
 void event_task(hoja_event_type_t type, uint8_t evt, uint8_t param)
 {
-    printf("BlueN64 Control Event: \n\ttype: %d\n\tevent: %d\n\tparam: %d\n", type, evt, param);
+    printf("N64 Blue Kit Control Event: \n\ttype: %d\n\tevent: %d\n\tparam: %d\n", type, evt, param);
     if (type == HOJA_EVT_BT && evt == HEVT_BT_DISCONNECT)
     {
         //This shouldn't be needed, but HOJA glitches after disconnecting the Switch... so... ¯\_(ツ)_/¯
@@ -71,7 +71,7 @@ void stick_task(hoja_analog_data_s* analog_data)
 
 void app_main(void)
 {
-    printf("BlueN64 Control Switch Mode. HEAP=%#010lx\n", esp_get_free_heap_size());
+    printf("N64 Blue Kit Control Switch Mode. HEAP=%#010lx\n", esp_get_free_heap_size());
 
     hoja_register_button_callback(button_task);
     hoja_register_analog_callback(stick_task);
@@ -87,7 +87,7 @@ void app_main(void)
     while(hoja_start_core() != HOJA_OK)
     {
         vTaskDelay(100 / portTICK_PERIOD_MS);
-        printf("BlueN64 Control. Retrying...\n");
+        printf("N64 Blue Kit Control. Retrying...\n");
     }
-    printf("BlueN64 Control. Switch Connected!\n");
+    printf("N64 Blue Kit Control. Switch Connected!\n");
 }
