@@ -20,6 +20,7 @@
 #define TRIGGER_L_PIN       GPIO_NUM_34
 #define TRIGGER_R_PIN       GPIO_NUM_23
 #define TRIGGER_Z_PIN       GPIO_NUM_15
+// Not Used
 #define TRIGGER_ZR_PIN      GPIO_NUM_4
 
 // MISC
